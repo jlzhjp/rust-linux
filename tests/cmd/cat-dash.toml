@@ -1,0 +1,2 @@
+bin.name = "cat"
+args = ["first.txt", "-", "second.txt"]

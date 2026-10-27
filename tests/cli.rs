@@ -2,5 +2,7 @@
 fn cli() {
     trycmd::TestCases::new()
         .register_bin("echo", trycmd::cargo::cargo_bin!("echo"))
-        .case("tests/cmd/*.trycmd");
+        .register_bin("cat", trycmd::cargo::cargo_bin!("cat"))
+        .case("tests/cmd/*.trycmd")
+        .case("tests/cmd/*.toml");
 }

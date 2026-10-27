@@ -1,0 +1,15 @@
+```console
+$ cat first.txt
+first line
+second line
+
+$ cat first.txt second.txt
+first line
+second line
+another file
+
+$ cat missing.txt
+? failed
+Error: [..]
+
+```
